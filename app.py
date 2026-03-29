@@ -2,12 +2,6 @@
 app.py — Afet Kurtarma Rota Optimizasyon Sistemi (v4)
 ======================================================
 Çalıştır: streamlit run app.py
-
-Yenilikler (v4):
-  - İl dışı kurtarma ekipleri (Adana, Gaziantep, Adıyaman, Malatya, Osmaniye)
-  - Faz bazlı navigasyon: Faz1 ve Faz2 ayrı Google/Yandex butonları
-  - Sade çevrimdışı kart: sadece ~10 kritik kavşak + özet bilgi
-  - Şehre giriş kapıları haritada gösteriliyor
 """
 
 import os

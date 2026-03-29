@@ -30,7 +30,7 @@ Standart navigasyon uygulamaları (Google Maps, Yandex vb.) olağanüstü afet d
 
 ---
 
-## 🚀 Jüri İçin "Wow" Demo Senaryosu (Nasıl Test Edilmeli?)
+## 🚀 Jüri İçin Demo Senaryosu (Nasıl Test Edilmeli?)
 
 Projenin haritalama ve A-Star algoritması üzerindeki başarısını [canlı sistem üzerinde](https://bilalsolmaz.com/) sadece birkaç saniyede jüriye kanıtlamak için:
 
@@ -84,11 +84,15 @@ streamlit run app.py
 
 ---
 
-## 🔭 Gelecek Vizyonu (Görüntü İşleme Entegrasyonu)
+## 🔭 Gelecek Vizyonu ve Bu Deponun (Repository) Kapsamı
 
-Mevcut sistemde **Copernicus EMS JSON/GeoJSON** çıktılarını aktif kullanıp başarılı bir şekilde yönlendirme yapabiliyoruz. Nihai hedefimiz, afet anında kendi uydularımızdan (`Göktürk Serisi`) gelen ham `.tiff` raster uydu görsellerini anlık olarak `Segment Anything Model (SAM)` ve uzamsal `U-Net` mimarileriyle doğrudan backend tarafında işleyerek, enkaz-yol çakışmasını **tam teşekküllü ve gerçek zamanlı (real-time)** bir şekilde otonom hale getirmektir.
+Şu an incelemekte olduğunuz bu GitHub reposu, TUA Astro Hackathon 2026 değerlendirmesi için sunulmuş **tamamen çalışan ve test edilebilir** ana prototiptir. 
+
+Mevcut sistemde Avrupa Uzay Ajansı'nın **Copernicus EMS** verilerini aktif olarak işleyebilen işlevsel bir altyapı mevcuttur. **Nihai hedefimiz ise:** Olası bir afet anında kendi yerli uydularımızdan (`Göktürk Serisi`, `İMECE`) gelen ham `.tiff` raster uydu görsellerini bulut sunucularda `Segment Anything Model (SAM)` ve uzamsal `U-Net` yapay zeka mimarileriyle otonom olarak parçalara ayırmaktır. 
+
+Bu repo, uydudan alınan hasar verisini yeryüzündeki ekiplere **saniyeler içinde** rota olarak aktaracak o devasa "Gerçek Zamanlı Karar Destek Sisteminin" kanıtlanmış ilk çekirdeğidir.
 
 <br>
 <div align="center">
-  <p><b>TUA Astro Hackathon 2026 için gökyüzüne bakarak, hayat kurtarmak için geliştirildi. 🚀</b></p>
+  <p><b>TUA Astro Hackathon 2026 Jürisine Saygılarımızla...</b><br><i>Gökyüzüne bakarak, hayat kurtarmak için geliştirildi. 🚀</i></p>
 </div>
