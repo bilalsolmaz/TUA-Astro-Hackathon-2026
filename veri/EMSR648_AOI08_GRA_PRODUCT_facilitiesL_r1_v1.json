@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "obj_type": "22-Pipelines, Communication and Electricity Lines", "name": "Gölbaşı TM - Narlı TM EİH", "info": "2214-Long-distance electricity lines", "damage_gra": "No visible damage", "det_method": "Photo-interpretation", "notation": "Not Applicable", "or_src_id": 1, "dmg_src_id": 3, "cd_value": "Not Applicable" }, "geometry": { "type": "LineString", "coordinates": [ [ 37.331490200000076, 37.503567100000055 ], [ 37.334713873000055, 37.511149780000039 ] ] } }
+,
+{ "type": "Feature", "properties": { "obj_type": "22-Pipelines, Communication and Electricity Lines", "name": "Gölbaşı TM - Narlı TM EİH", "info": "2214-Long-distance electricity lines", "damage_gra": "No visible damage", "det_method": "Photo-interpretation", "notation": "Not Applicable", "or_src_id": 1, "dmg_src_id": 3, "cd_value": "Not Applicable" }, "geometry": { "type": "LineString", "coordinates": [ [ 37.32959376000008, 37.501744214000041 ], [ 37.331490200000076, 37.503567100000055 ] ] } }
+
+]
+}

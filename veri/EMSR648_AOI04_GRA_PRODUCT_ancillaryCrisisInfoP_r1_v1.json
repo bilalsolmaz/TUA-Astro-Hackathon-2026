@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "obj_type": "Physical Barrier", "element_co": 1, "obj_desc": "Road barrier", "det_method": "Photo-interpretation", "notation": "Not Applicable", "or_src_id": 2, "dmg_src_id": 2, "cd_value": "Not Applicable" }, "geometry": { "type": "Point", "coordinates": [ 36.922861111000032, 37.575106481000034 ] } }
+,
+{ "type": "Feature", "properties": { "obj_type": "Physical Barrier", "element_co": 1, "obj_desc": "Road barrier", "det_method": "Photo-interpretation", "notation": "Not Applicable", "or_src_id": 2, "dmg_src_id": 2, "cd_value": "Not Applicable" }, "geometry": { "type": "Point", "coordinates": [ 36.918814815000076, 37.569138889000044 ] } }
+,
+{ "type": "Feature", "properties": { "obj_type": "Physical Barrier", "element_co": 1, "obj_desc": "Road barrier", "det_method": "Photo-interpretation", "notation": "Not Applicable", "or_src_id": 2, "dmg_src_id": 2, "cd_value": "Not Applicable" }, "geometry": { "type": "Point", "coordinates": [ 36.925554473000034, 37.577442985000062 ] } }
+,
+{ "type": "Feature", "properties": { "obj_type": "Physical Barrier", "element_co": 1, "obj_desc": "Road barrier", "det_method": "Photo-interpretation", "notation": "Not Applicable", "or_src_id": 2, "dmg_src_id": 2, "cd_value": "Not Applicable" }, "geometry": { "type": "Point", "coordinates": [ 36.933296296000037, 37.574648148000051 ] } }
+,
+{ "type": "Feature", "properties": { "obj_type": "Physical Barrier", "element_co": 1, "obj_desc": "Road barrier", "det_method": "Photo-interpretation", "notation": "Not Applicable", "or_src_id": 2, "dmg_src_id": 2, "cd_value": "Not Applicable" }, "geometry": { "type": "Point", "coordinates": [ 36.951662037000062, 37.56464814800006 ] } }
+,
+{ "type": "Feature", "properties": { "obj_type": "Physical Barrier", "element_co": 1, "obj_desc": "Road barrier", "det_method": "Photo-interpretation", "notation": "Not Applicable", "or_src_id": 2, "dmg_src_id": 2, "cd_value": "Not Applicable" }, "geometry": { "type": "Point", "coordinates": [ 36.879259259000037, 37.589013889000057 ] } }
+,
+{ "type": "Feature", "properties": { "obj_type": "Physical Barrier", "element_co": 1, "obj_desc": "Road barrier", "det_method": "Photo-interpretation", "notation": "Not Applicable", "or_src_id": 2, "dmg_src_id": 2, "cd_value": "Not Applicable" }, "geometry": { "type": "Point", "coordinates": [ 36.888333333000048, 37.588097222000044 ] } }
+
+]
+}
