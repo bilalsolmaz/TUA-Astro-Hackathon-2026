@@ -1,101 +1,94 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Police%20car%20light/3D/police_car_light_3d.png" width="80" alt="logo" />
-  <h1>RescueRoute | Afet Rota Optimizasyon Sistemi</h1>
-  <p><b>TUA Astro Hackathon 2026 Sunum Projesi</b></p>
+  <h1>RescueRoute | Akıllı Afet Rota Optimizasyon Sistemi</h1>
+  <p><b>TUA Astro Hackathon 2026 Finalist Projesi</b></p>
 
   [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
   [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io/)
-  [![AI & Satellite Analytics](https://img.shields.io/badge/AI_%26_Uydu-Copernicus-004481?style=for-the-badge)](https://www.copernicus.eu/en)
+  [![Copernicus EMS](https://img.shields.io/badge/Gerçek_Uydu_Verisi-Copernicus-004481?style=for-the-badge)](https://emergency.copernicus.eu/mapping/list-of-components/EMSR648)
+  [![Live Demo](https://img.shields.io/badge/Canl%C4%B1_Yay%C4%B1nda-Web_Sitesi-10a37f?style=for-the-badge)](https://bilalsolmaz.com/)
 
   <p>
-    <em>Kahramanmaraş 6 Şubat depremi senaryosu üzerinden modellenmiş, uydu verisi vizyonu ve yapay zeka destekli hasar tespit mantığı ile kurtarma ekiplerine <b>en hızlı ve güvenli rotayı</b> çizen akıllı navigasyon ve lojistik sistemi.</em>
+    <em>Kahramanmaraş 6 Şubat depremi senaryosu üzerinden modellenmiş, <b>Copernicus Gerçek Uydu Verisi (EMSR648)</b> ile anlık enkaz analizi yapan ve kurtarma ekiplerine 2 aşamalı <b>en güvenli rotayı</b> çizen lojistik yönetim platformu.</em>
   </p>
+  <h3>🔴 CANLI DEMO: <a href="https://bilalsolmaz.com/">bilalsolmaz.com</a></h3>
 </div>
 
 ---
 
 ## 🌍 Neden RescueRoute?
 
-Standart navigasyon uygulamaları (Google Maps, Yandex) afet anında yıkılmış binaları, çökmüş köprüleri ve enkazla kapanmış yolları hesaba katamaz. **RescueRoute**, kritik ilk 72 saatte arama kurtarma, ambulans ve yardım filolarının afet bölgesinde zaman ve hayat kaybetmesini önlemek için tasarlandı.
+Standart navigasyon uygulamaları (Google Maps, Yandex vb.) olağanüstü afet durumlarında yıkılmış binaları, çökmüş köprüleri ve enkazla kapanmış yolları hesaba katamaz. **RescueRoute**, kritik ilk 72 saatte arama kurtarma, ambulans ve yardım filolarının afet bölgesinde zaman ve hayat kaybetmesini önlemek için tasarlandı.
 
-- ⏱ **Saniyeler İçinde Hayati Karar:** Hasarlı ve riskli yolları algılayarak alternatif güvenli güzergah planlar.
-- 🛰 **Uydu Verisi Hazır Mimari:** Copernicus Sentinel-2 sistemi ve gelişmiş segmentasyon (SAM) modellerine entegre edilebilecek modüler bir altyapı üzerine kuruludur.
-- 🎛 **Dinamik Önceliklendirme (A*):** Ekipler anlık duruma göre riskten kaçınma (α), kısa mesafe (β) veya tahmini varış süresi (γ) önceliklerini esnek olarak belirleyebilir.
+### ⭐ Öne Çıkan Özellikler
 
----
-
-## 🚀 Jüri İçin "Wow" Demo Senaryosu
-
-Jüri değerlendirmesinde projenin kapasitesini sadece birkaç saniyede, en çarpıcı şekilde göstermek için şu adımları izleyin:
-
-1. **Önce Durumu Anlatın:** Sistemdeki yolların **Yeşil (Açık)**, **Sarı (Riskli)** ve **Kırmızı (Göçük/Kapalı)** olarak yapay zeka ile haritalandırıldığını gösterin.
-2. **Başlangıç & Hedef:** 
-   - Başlangıç Noktası: **"Pazarcık Merkez (Episantr Yakını)"**
-   - Hedef Noktası: **"KMaraş Eğitim Araştırma Hastanesi"**
-3. **Parametre Etkisi (Kritik Aşama):**
-   - Sol panelden *Hasar Risk Ağırlığını* (α) önce **1.0 (Düşük)** olarak seçip *Rotayı Hesapla*'ya basın. Sistem kısa olduğu için riskli (kırmızı) sokakların içinden geçmeyi önerecektir.
-   - Ardından ağırlığı **10.0 (Yüksek)** olarak ayarlayıp tekrar hesaplayın.
-4. **Sonuç:** Algoritmanın kırmızılı alanlardan asimptotik olarak nasıl kaçtığını, belki daha uzun ama **tamamen yeşil ve güvenli** çevre yolunu nasıl bulduğunu gösterin!
+- 🛰 **İki Katmanlı Hasar Modeli (Gerçek Veri):** Sadece bir simülasyon değil! **Copernicus EMS EMSR648** aktivasyonundan alınan gerçek uydu analizlerini kullanarak bina yıkım haritalarını yol ağlarına yansıtır (`scipy.spatial.cKDTree` ile optimize edilmiştir). Veri olmayan kör noktalarda algoritmik **GMPE (Ground Motion Prediction Equation)** modelini devreye sokar.
+- 🚒 **Çoklu Ekip Planlaması:** İl içi (AFAD, İtfaiye, UMKE) ekiplerinin yanı sıra Şehir Dışından yardıma gelen (Adana, Gaziantep vb. karayolu giriş noktalarından) kurtarma konvoyları için de dinamik rotalama sağlar.
+- 🔁 **2 Aşamalı Operasyon (Faz 1 & Faz 2):** AFAD Koordinasyon Merkezinden → Enkaza (Faz 1) ve Enkazdan → Hastaneye (Faz 2) tek tıklamayla birleşik kurtarma rotası planlar.
+- 🎛 **Dinamik Optimizasyon Profilleri (A* ve Algoritma Ağırlıkları):** Saha komutanları duruma göre **🛡️ Güvenlik Öncelikli**, **⚡ Hız Öncelikli** veya **📐 Dengeli** algoritmalarını (Mesafe `α`, Hasar Risk `β`, Süre `γ` parametrelerini) manipüle edebilir.
+- 📡 **Çevrimdışı (Offline) Yönlendirme Kartları:** Afet alanında internet kesilme ihtimaline karşı rota üzerindeki kritik kavşak koordinatları `.json` veya harici veri formatlarında cihaza kaydedilip (Çevrimdışı Kart), sahaya otonom aktarılabilir.
 
 ---
 
-## ⚙️ Teknik Altyapı & Teknolojiler
+## 🚀 Jüri İçin "Wow" Demo Senaryosu (Nasıl Test Edilmeli?)
 
-Proje, hızlı veri işleme ve anlık reaksiyon yeteneği gözetilerek Python veri bilimi ekosistemi üzerinde geliştirilmiştir.
+Projenin haritalama ve A-Star algoritması üzerindeki başarısını [canlı sistem üzerinde](https://bilalsolmaz.com/) sadece birkaç saniyede jüriye kanıtlamak için:
 
-| Mimari | Teknoloji | Amaç |
+1. **Operasyon Seçimi:** Sol sekmeden "2️⃣ İki Aşamalı (Merkez → Enkaz → Hastane)" seçeneğini işaretleyin.
+2. **Akıllı Geocoding (Enkaz Arama):** Enkaz noktası yöntemi için **"🔍 Adres / yer adı ara"** moduna geçin ve `Sofular Mah, Pazarcık` yazın. Sistem OSM üzerinden veriyi indirecek ve tam konumlandıracaktır.
+3. **Parametre Farkını (Gücü) Gösterin (Kritik Adım):**
+   - Ayarlardan hızlı profil olarak **"⚡ Hız Öncelikli"** (veya Manuel ayardan Mesafe(α)=0.70, Hasar(β)=0.10) yapın. *Haritayı Hesapla* butonuna basın. Rota kısa yolu seçecek ve riskli (kırmızı/sarı) sokaklara girmek zorunda kalacaktır.
+   - Ardından profili **"🛡️ Güvenlik Öncelikli"** (Manuel ayar Hasar Risk(β)=0.80) olarak güncelleyin ve tekrar hesaplayın.
+4. **Wow Etkisi:** Algoritmanın enkaz, göçük ve kırmızı işaretli riskli alanlardan nasıl asimptotik şekilde kaçtığını, çevre yolunu bularak tehlikesiz, yeşil ve güvenli bir alternatif haritada çizdiğini saniyeler içinde kanıtlayın.
+
+---
+
+## ⚙️ Teknik Altyapı & Mimari
+
+Sistem yüz binlerce düğüm ve kenarı barındıran kompleks mekansal verileri milisaniyeler içinde işlemek için tasarlandı.
+
+| Çerçeve Türü | Teknoloji / Kütüphane | Kullanım Amacı |
 | :--- | :--- | :--- |
-| **Ön Yüz (UI)** | `Streamlit`, `Folium` | Etkileşimli analitik paneli ve katmanlı dinamik vektör haritalar. |
-| **Topoloji & Çizge Alg.** | `OSMnx`, `NetworkX` | Hedef bölgenin tüm vektörel cadde/sokak ağını düğüm ve kenarlar halinde (graph) belleğe alır. |
-| **Optimizasyon Motoru** | `Custom A* (A-Star)` | Kendi yazdığımız özel A* heuristik fonksiyonu ile mesafe, süre ve **Yapay Zeka Risk Skorunu** birleştirir. |
+| **Arayüz (UI) & Katmanlı Harita** | `Streamlit`, `Folium` | Etkileşimli veri görselleştirme paneli, katmanlı dinamik vektör haritalar. |
+| **Topoloji & Çizge Analizi** | `OSMnx`, `NetworkX` | Hedef il ve ilçenin tüm vektörel cadde ağını Graph nesnelerine dönüştürür. |
+| **Uzamsal Analiz (Fast Query)** | `scipy.spatial.cKDTree`, `GeoPandas` | On binlerce Copernicus uydu hasar noktasını, cadde ve sokak yollarıyla uzamsal algoritmalarla çok hızlı eşleyerek hasar yüzdesi çıkarır. |
+| **Optimizasyon Motoru** | `Custom A-Star (A*) / Dijkstra` | Yen's K-Shortest Paths ve özelleştirilmiş Heuristik. Hasar seviyesine göre taşıt hızları 50 km/s'den 1.5 km/s'ye kadar dinamik düşürülür ve süre uzatılır. |
 
 ---
 
-## 💻 Kurulum ve Çalıştırma (Demo İçin)
+## 💻 Kurulum ve Çalıştırma (Lokal Cihaz İçin)
 
-Proje sadece birkaç komutla çalışmaya hazır hale gelir:
+Projeyi kendi ortamınızda test etmek için:
 
-### 1. Sanal Ortam (Virtual Environment)
+### 1. Ortam Hazırlığı
 ```bash
 python -m venv venv
 
-# Windows
+# Windows için:
 venv\Scripts\activate
 
-# macOS / Linux
+# macOS / Linux için:
 source venv/bin/activate
 ```
 
-### 2. Gerekli Paketlerin Yüklenmesi
+### 2. Gerekli Kütüphanelerin Kurulumu
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Uygulamayı Başlatma
+### 3. Sistemi Başlatma
 ```bash
 streamlit run app.py
 ```
-> Otomatik olarak tarayıcınızda `http://localhost:8501` adresinde açılacaktır.
-> 💡 **Önemli Not:** İlk açılışta OSM yol ağı canlı olarak indirilir ve `cache/` dizinine kaydedilir (~30-40 sn sürebilir). Sonraki açılışlarda anında yüklenir!
+> Otomatik olarak tarayıcınızda `http://localhost:8501` adresinde açılacaktır. İlk açılışta `cache/` (önbellek) klasörüne yol ağları kaydedildiği için 30-40 sn sürebilir. Sonraki kullanımlar anında gerçekleşir.
 
 ---
 
-## 🔭 Gelecek Vizyonu (Prodüksiyon Modeli)
+## 🔭 Gelecek Vizyonu (Görüntü İşleme Entegrasyonu)
 
-Şu anki demoda hasar durumu episantr uzaklığı ile simule edilmektedir. Gerçeğe dönüşecek vizyonumuzda sistem şu mimari üzerinden çalışacaktır:
-
-```python
-from segment_anything import SamPredictor
-import rasterio
-
-def compute_damage_score(lat, lon):
-    # 1. Copernicus / Göktürk uydularından kriz anında en güncel görüntüyü çek.
-    # 2. SAM (Segment Anything Model) ile yıkıntıları görüntü üzerinden çıkar (segmentasyon).
-    # 3. OSMNx düğümleri ile çakıştır ve her yola %0-100 enkaz/kapanma risk skoru ata.
-    return ai_generated_real_risk
-```
+Mevcut sistemde **Copernicus EMS JSON/GeoJSON** çıktılarını aktif kullanıp başarılı bir şekilde yönlendirme yapabiliyoruz. Nihai hedefimiz, afet anında kendi uydularımızdan (`Göktürk Serisi`) gelen ham `.tiff` raster uydu görsellerini anlık olarak `Segment Anything Model (SAM)` ve uzamsal `U-Net` mimarileriyle doğrudan backend tarafında işleyerek, enkaz-yol çakışmasını **tam teşekküllü ve gerçek zamanlı (real-time)** bir şekilde otonom hale getirmektir.
 
 <br>
 <div align="center">
-  <p><b>TUA Astro Hackathon 2026 için gökyüzüne bakarak, dünyayı kurtarmak için geliştirildi. 🚀</b></p>
+  <p><b>TUA Astro Hackathon 2026 için gökyüzüne bakarak, hayat kurtarmak için geliştirildi. 🚀</b></p>
 </div>
