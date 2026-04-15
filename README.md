@@ -6,12 +6,9 @@
   [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
   [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io/)
   [![Copernicus EMS](https://img.shields.io/badge/Gerçek_Uydu_Verisi-Copernicus-004481?style=for-the-badge)](https://emergency.copernicus.eu/mapping/list-of-components/EMSR648)
-  [![Live Demo](https://img.shields.io/badge/Canl%C4%B1_Yay%C4%B1nda-Web_Sitesi-10a37f?style=for-the-badge)](https://bilalsolmaz.com/)
-
   <p>
     <em>Kahramanmaraş 6 Şubat depremi senaryosu üzerinden modellenmiş, <b>Copernicus Gerçek Uydu Verisi (EMSR648)</b> ile anlık enkaz analizi yapan ve kurtarma ekiplerine 2 aşamalı <b>en güvenli rotayı</b> çizen lojistik yönetim platformu.</em>
   </p>
-  <h3>🔴 CANLI DEMO: <a href="https://bilalsolmaz.com/">bilalsolmaz.com</a></h3>
 </div>
 
 ---
