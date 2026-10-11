@@ -29,7 +29,7 @@ Standart navigasyon uygulamaları (Google Maps, Yandex vb.) olağanüstü afet d
 
 ## 🚀 Jüri İçin Demo Senaryosu (Nasıl Test Edilmeli?)
 
-Projenin haritalama ve A-Star algoritması üzerindeki başarısını [canlı sistem üzerinde](https://bilalsolmaz.com/) sadece birkaç saniyede jüriye kanıtlamak için:
+Projenin haritalama ve A-Star algoritması üzerindeki başarısını [canlı sistem üzerinde] sadece birkaç saniyede jüriye kanıtlamak için:
 
 1. **Operasyon Seçimi:** Sol sekmeden "2️⃣ İki Aşamalı (Merkez → Enkaz → Hastane)" seçeneğini işaretleyin.
 2. **Akıllı Geocoding (Enkaz Arama):** Enkaz noktası yöntemi için **"🔍 Adres / yer adı ara"** moduna geçin ve `Sofular Mah, Pazarcık` yazın. Sistem OSM üzerinden veriyi indirecek ve tam konumlandıracaktır.
